@@ -3,28 +3,32 @@ using namespace std;
 
 int main() {
 
-    int caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3;
+    int caseA1 = 0, caseA2 = 0, caseA3 = 0,
+        caseB1 = 0, caseB2 = 0, caseB3 = 0,
+        caseC1 = 0, caseC2 = 0, caseC3 = 0;
 
 ///////Cas 1
     if (caseA1 == caseA2 == caseA3 and caseA1 !=0)
     {
       if (caseA1 == 1)
       {
-         cout << "Joueur 1 a gagne" << endl;
+          cout << "Joueur 1 a gagne" << endl;
       }
-        else{
-            cout << "Joueur 2 a gagne" << endl;
-        }
+      else
+      {
+          cout << "Joueur 2 a gagne" << endl;
+      }
 
     }
     //////////Cas 2
     if (caseB1 == caseB2 == caseB3 and caseB1 !=0)
     {
-        if (caseA1 == 1)
+        if (caseB1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -32,23 +36,25 @@ int main() {
     //////////Cas 3
     if (caseC1 == caseC2 == caseC3 and caseC1 !=0)
     {
-        if (caseA1 == 1)
+        if (caseC1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
     }
     //////////Cas 4
-    if (caseC1 == caseA1 == caseB1 and caseA1 !=0)
+    if (caseA1 == caseB1 == caseC1 and caseA1 !=0)
     {
         if (caseA1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -56,23 +62,25 @@ int main() {
     //////////Cas 5
     if (caseA2 == caseB2 == caseC2 and caseA2 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA2 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
     }
     //////////Cas 6
-    if (caseA3 == caseB3 == caseC3 and caseC1 !=0)
+    if (caseA3 == caseB3 == caseC3 and caseA3 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -84,7 +92,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -92,20 +101,19 @@ int main() {
     //////////Cas 8
     if (caseA3 == caseB2 == caseC1 and caseA3 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
     }
 
-
-    cout << "Quelle case voulez-vous jouer ?" << endl;
-
     cout << "TicTacToe!" << endl;
-    return 0;
 
+    return 0;
 }
