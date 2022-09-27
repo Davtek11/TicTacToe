@@ -6,7 +6,7 @@ int main() {
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
         caseB1 = 0, caseB2 = 0, caseB3 = 0,
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
-/*
+
 ///////Cas 1
     if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
     {
@@ -111,7 +111,7 @@ int main() {
             cout << "Joueur 2 a gagne" << endl;
         }
 
-    } */
+    }
 
     cout << "TicTacToe!" << endl;
 
