@@ -21,7 +21,7 @@ int main() {
     //////////Cas 2
     if (caseB1 == caseB2 == caseB3 and caseB1 !=0)
     {
-        if (caseA1 == 1)
+        if (caseB1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
@@ -34,7 +34,7 @@ int main() {
     //////////Cas 3
     if (caseC1 == caseC2 == caseC3 and caseC1 !=0)
     {
-        if (caseA1 == 1)
+        if (caseC1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
@@ -60,7 +60,7 @@ int main() {
     //////////Cas 5
     if (caseA2 == caseB2 == caseC2 and caseA2 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA2 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
@@ -73,7 +73,7 @@ int main() {
     //////////Cas 6
     if (caseA3 == caseB3 == caseC3 and caseA3 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
@@ -99,7 +99,7 @@ int main() {
     //////////Cas 8
     if (caseA3 == caseB2 == caseC1 and caseA3 !=0)
     {
-        if (caseA1 == 1)
+        if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
         }
