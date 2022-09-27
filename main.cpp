@@ -1,6 +1,14 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
+    int caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3;
+
+
+    cout << "TicTacToe!" << endl;
+
     return 0;
+
 }
