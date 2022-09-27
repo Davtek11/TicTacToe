@@ -8,7 +8,7 @@ int main() {
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
 
 ///////Cas 1
-    if (caseA1 == caseA2 == caseA3 and caseA1 !=0)
+    if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
     {
       if (caseA1 == 1)
       {
@@ -21,7 +21,7 @@ int main() {
 
     }
     //////////Cas 2
-    if (caseB1 == caseB2 == caseB3 and caseB1 !=0)
+    if (caseB1 == caseB2 and caseB1 == caseB3 and caseB1 !=0)
     {
         if (caseB1 == 1)
         {
@@ -34,7 +34,7 @@ int main() {
 
     }
     //////////Cas 3
-    if (caseC1 == caseC2 == caseC3 and caseC1 !=0)
+    if (caseC1 == caseC2 and caseC1 == caseC3 and caseC1 !=0)
     {
         if (caseC1 == 1)
         {
@@ -47,7 +47,7 @@ int main() {
 
     }
     //////////Cas 4
-    if (caseA1 == caseB1 == caseC1 and caseA1 !=0)
+    if (caseA1 == caseB1 and caseA1 == caseC1 and caseA1 !=0)
     {
         if (caseA1 == 1)
         {
@@ -60,7 +60,7 @@ int main() {
 
     }
     //////////Cas 5
-    if (caseA2 == caseB2 == caseC2 and caseA2 !=0)
+    if (caseA2 == caseB2 and caseA2 == caseC2 and caseA2 !=0)
     {
         if (caseA2 == 1)
         {
@@ -73,7 +73,7 @@ int main() {
 
     }
     //////////Cas 6
-    if (caseA3 == caseB3 == caseC3 and caseA3 !=0)
+    if (caseA3 == caseB3 and caseA3 == caseC3 and caseA3 !=0)
     {
         if (caseA3 == 1)
         {
@@ -86,7 +86,7 @@ int main() {
 
     }
     //////////Cas 7
-    if (caseA1 == caseB2 == caseC3 and caseA1 !=0)
+    if (caseA1 == caseB2 and caseA1 == caseC3 and caseA1 !=0)
     {
         if (caseA1 == 1)
         {
@@ -99,7 +99,7 @@ int main() {
 
     }
     //////////Cas 8
-    if (caseA3 == caseB2 == caseC1 and caseA3 !=0)
+    if (caseA3 == caseB2 and caseA3 == caseC1 and caseA3 !=0)
     {
         if (caseA3 == 1)
         {
