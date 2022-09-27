@@ -4,6 +4,7 @@ using namespace std;
 int main() {
 
     int caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3;
+
 ///////Cas 1
     if (caseA1 == caseA2 == caseA3 and caseA1 !=0)
     {
@@ -41,7 +42,7 @@ int main() {
 
     }
     //////////Cas 4
-    if (caseA1 == caseA1 == caseB1 and caseA1 !=0)
+    if (caseC1 == caseA1 == caseB1 and caseA1 !=0)
     {
         if (caseA1 == 1)
         {
@@ -53,7 +54,7 @@ int main() {
 
     }
     //////////Cas 5
-    if (caseA2 == caseB2 == caseB3 and caseA2 !=0)
+    if (caseA2 == caseB2 == caseC2 and caseA2 !=0)
     {
         if (caseA1 == 1)
         {
@@ -65,7 +66,7 @@ int main() {
 
     }
     //////////Cas 6
-    if (caseC1 == caseC2 == caseC3 and caseC1 !=0)
+    if (caseA3 == caseB3 == caseC3 and caseC1 !=0)
     {
         if (caseA1 == 1)
         {
