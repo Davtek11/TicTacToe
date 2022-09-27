@@ -3,17 +3,19 @@ using namespace std;
 
 int main() {
 
-    int caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3;
+    int caseA1 = 0, caseA2 = 0, caseA3 = 0, caseB1 = 0,
+        caseB2 = 0, caseB3 = 0, caseC1 = 0, caseC2 = 0, caseC3 = 0;
 ///////Cas 1
     if (caseA1 == caseA2 == caseA3 and caseA1 !=0)
     {
       if (caseA1 == 1)
       {
-         cout << "Joueur 1 a gagne" << endl;
+          cout << "Joueur 1 a gagne" << endl;
       }
-        else{
-            cout << "Joueur 2 a gagne" << endl;
-        }
+      else
+      {
+          cout << "Joueur 2 a gagne" << endl;
+      }
 
     }
     //////////Cas 2
@@ -23,7 +25,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -35,7 +38,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -47,7 +51,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -59,7 +64,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -71,7 +77,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -83,7 +90,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
@@ -95,7 +103,8 @@ int main() {
         {
             cout << "Joueur 1 a gagne" << endl;
         }
-        else{
+        else
+        {
             cout << "Joueur 2 a gagne" << endl;
         }
 
