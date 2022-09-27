@@ -6,7 +6,7 @@ int main() {
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
         caseB1 = 0, caseB2 = 0, caseB3 = 0,
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
-
+/*
 ///////Cas 1
     if (caseA1 == caseA2 == caseA3 and caseA1 !=0)
     {
@@ -111,9 +111,50 @@ int main() {
             cout << "Joueur 2 a gagne" << endl;
         }
 
-    }
+    } */
 
     cout << "TicTacToe!" << endl;
+
+
+
+
+
+
+    string case1;
+
+    cout << "Quelle case voulez vous jouer ? (ex : A1)";
+
+    getline(cin, case1);
+
+    if (case1 == "A1") {
+        caseA1 = 1;
+    }
+    if (case1 == "A2") {
+        caseA2 = 1;
+    }
+    if (case1 == "A3") {
+        caseA3 = 1;
+    }
+    if (case1 == "B1") {
+        caseB1 = 1;
+    }
+    if (case1 == "B2") {
+        caseB2 = 1;
+    }
+    if (case1 == "B3") {
+        caseB3 = 1;
+    }
+    if (case1 == "C1") {
+        caseC1 = 1;
+    }
+    if (case1 == "C2") {
+        caseC2 = 1;
+    }
+    if (case1 == "C3") {
+        caseC3 = 1;
+    }
+
+
 
     return 0;
 }
