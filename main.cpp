@@ -160,7 +160,7 @@ int main() {
         caseC3 = 1;
     }
 
-            cout << "Case selectionnee : " + case1 << endl;
+            cout << "Case selectionnee : " + caseChoisie << endl;
 
 
             joueur = 2;
@@ -200,7 +200,7 @@ int main() {
                 caseC3 = 2;
             }
 
-            cout << "Case selectionnee : " + case1 << endl;
+            cout << "Case selectionnee : " + caseChoisie << endl;
 
             joueur = 1;
         }
