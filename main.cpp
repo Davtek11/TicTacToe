@@ -250,6 +250,7 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
 }
 
 
+
 int main() {
 
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
@@ -265,6 +266,7 @@ int main() {
 
     victoire(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
 
+
     string caseChoisie;
 
     while (jeu == true)
@@ -279,7 +281,6 @@ int main() {
 
     if (caseChoisie == "A1") {
         caseA1 = 1;
-        cout << "A1 : " << caseA1;
     }
     if (caseChoisie == "A2") {
         caseA2 = 1;
@@ -316,7 +317,7 @@ int main() {
 
             cout << "Joueur 2 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
-            getline(cin, caseChoisie;
+            getline(cin, caseChoisie);
 
             if (caseChoisie == "A1") {
                 caseA1 = 2;
