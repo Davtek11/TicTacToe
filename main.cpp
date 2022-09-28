@@ -137,9 +137,8 @@ void afficherJeu (int caseA1, int caseA2, int caseA3,
 }
 
 
-int main() {
 
-string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int caseB3, int caseC1, int caseC2, int caseC3) {
+void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int& caseB2, int& caseB3, int& caseC1, int& caseC2, int& caseC3) {
 
     ///////Cas 1
     if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
@@ -147,10 +146,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -160,10 +161,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseB1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -173,10 +176,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseC1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -186,10 +191,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -199,10 +206,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA2 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -212,10 +221,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -225,10 +236,12 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA1 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
@@ -238,15 +251,16 @@ string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int 
         if (caseA3 == 1)
         {
             cout << "Joueur 1 a gagne" << endl;
+            jeu = false;
         }
 
         else
         {
             cout << "Joueur 2 a gagne" << endl;
+            jeu = false;
         }
 
     }
-
 }
 
 
@@ -263,15 +277,19 @@ int main() {
 
     cout << "TicTacToe!" << endl;
 
-    victoire(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
 
     string caseChoisie;
 
     while (jeu == true)
     {
 
+
+
+
         if (joueur == 1) {
 
+            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
+            victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
             cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
 
@@ -314,9 +332,11 @@ int main() {
 
         if (joueur == 2) {
 
+            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
+            victoire(jeu, caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
             cout << "Joueur 2 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
-            getline(cin, caseChoisie;
+            getline(cin, caseChoisie);
 
             if (caseChoisie == "A1") {
                 caseA1 = 2;
@@ -351,5 +371,10 @@ int main() {
             joueur = 1;
         }
     }
+
+
+
     return 0;
 }
+
+
