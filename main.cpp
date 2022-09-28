@@ -159,6 +159,10 @@ int main() {
             if (case1 == "C3") {
                 caseC3 = 1;
             }
+
+            cout << "Case selectionnee : " + case1 << endl;
+
+
             joueur = 2;
         }
 
@@ -195,6 +199,9 @@ int main() {
             if (case1 == "C3") {
                 caseC3 = 2;
             }
+
+            cout << "Case selectionnee : " + case1 << endl;
+
             joueur = 1;
         }
     }
