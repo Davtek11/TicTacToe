@@ -1,6 +1,143 @@
 #include <iostream>
 using namespace std;
 
+void afficherJeu (int caseA1, int caseA2, int caseA3,
+                  int caseB1, int caseB2, int caseB3,
+                  int caseC1, int caseC2, int caseC3)
+{
+
+    char A1, A2, A3, B1, B2, B3, C1, C2, C3;
+
+    if  (caseA1 == 0)
+    {
+        A1 = ' ';
+    }
+    else if(caseA1 == 1)
+    {
+        A1 = 'X';
+    }
+    else
+    {
+        A1 = '0';
+    }
+    if  (caseA1 == 0)
+    {
+        A1 = ' ';
+    }
+    else if(caseA1 == 1)
+    {
+        A1 = 'X';
+    }
+    else
+    {
+        A1 = '0';
+    }
+    if  (caseA2 == 0)
+    {
+        A2 = ' ';
+    }
+    else if(caseA2 == 1)
+    {
+        A2 = 'X';
+    }
+    else
+    {
+        A2 = '0';
+    }
+    if  (caseA3 == 0)
+    {
+        A3 = ' ';
+    }
+    else if(caseA3 == 1)
+    {
+        A3 = 'X';
+    }
+    else
+    {
+        A3 = '0';
+    }
+    if  (caseB1 == 0)
+    {
+        B1 = ' ';
+    }
+    else if(caseB1 == 1)
+    {
+        B1 = 'X';
+    }
+    else
+    {
+        B1 = '0';
+    }
+    if  (caseB2 == 0)
+    {
+        B2 = ' ';
+    }
+    else if(caseB2 == 1)
+    {
+        B2 = 'X';
+    }
+    else
+    {
+        B2 = '0';
+    }
+    if  (caseB3 == 0)
+    {
+        B3 = ' ';
+    }
+    else if(caseB3 == 1)
+    {
+        B3 = 'X';
+    }
+    else
+    {
+        B3 = '0';
+    }
+    if  (caseC1 == 0)
+    {
+        C1 = ' ';
+    }
+    else if(caseC1 == 1)
+    {
+        C1 = 'X';
+    }
+    else
+    {
+        C1 = '0';
+    }
+    if  (caseC2 == 0)
+    {
+        C2 = ' ';
+    }
+    else if(caseC2 == 1)
+    {
+        C2 = 'X';
+    }
+    else
+    {
+        C2 = '0';
+    }
+    if  (caseC3 == 0)
+    {
+        C3 = ' ';
+    }
+    else if(caseC3 == 1)
+    {
+        C3 = 'X';
+    }
+    else
+    {
+        C3 = '0';
+    }
+
+    cout << " " << A1 << " | " << A2 << " | " << A3 << " " << endl
+        << "---|---|---" << endl
+        << " " << B1 << " | " << B2 << " | " << B3 << " " << endl
+        << "---|---|---" << endl
+        << " " << C1 << " | " << C2 << " | " << C3 << " " << endl;
+}
+
+
+int main() {
 
 string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int caseB3, int caseC1, int caseC2, int caseC3) {
 
