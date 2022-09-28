@@ -1,26 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main() {
 
-    int caseA1 = 0, caseA2 = 0, caseA3 = 0,
-        caseB1 = 0, caseB2 = 0, caseB3 = 0,
-        caseC1 = 0, caseC2 = 0, caseC3 = 0;
+string victoire(int caseA1, int caseA2, int caseA3, int caseB1, int caseB2, int caseB3, int caseC1, int caseC2, int caseC3) {
 
-    int joueur = 1;
-    bool jeu = true;
-
-///////Cas 1
+    ///////Cas 1
     if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
     {
-      if (caseA1 == 1)
-      {
-          cout << "Joueur 1 a gagne" << endl;
-      }
-      else
-      {
-          cout << "Joueur 2 a gagne" << endl;
-      }
+        if (caseA1 == 1)
+        {
+            cout << "Joueur 1 a gagne" << endl;
+        }
+        else
+        {
+            cout << "Joueur 2 a gagne" << endl;
+        }
 
     }
     //////////Cas 2
@@ -116,8 +110,23 @@ int main() {
 
     }
 
+}
+
+
+int main() {
+
+    int caseA1 = 0, caseA2 = 0, caseA3 = 0,
+        caseB1 = 0, caseB2 = 0, caseB3 = 0,
+        caseC1 = 0, caseC2 = 0, caseC3 = 0;
+
+    int joueur = 1;
+    bool jeu = true;
+
+
+
     cout << "TicTacToe!" << endl;
 
+    victoire(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
 
     string caseChoisie;
 
