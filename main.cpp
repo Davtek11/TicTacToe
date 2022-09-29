@@ -1,3 +1,9 @@
+//Alexander Bouriot - Arthur Junod - David Berger
+//Laboratoire Tic-Tac-Toe
+//29.09.2022
+
+
+
 #include <iostream>
 using namespace std;
 
