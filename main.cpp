@@ -270,6 +270,11 @@ void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int&
         }
 
     }
+    if (caseA1 != 0 and caseA2 != 0 and caseA3 != 0 and caseB1 != 0 and caseB2 != 0 and caseB3 != 0 and caseC1 != 0 and caseC2 != 0 and caseC3 != 0)
+    {
+        cout << "Egalite !" << endl;
+        jeu = false;
+    }
 }
 
 void choix(bool& jeu, bool& joueur, string caseChoisie,
