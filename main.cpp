@@ -29,6 +29,18 @@ void afficherJeu (int caseA1, int caseA2, int caseA3,
     {
         A1 = '0';
     }
+    if  (caseA1 == 0)
+    {
+        A1 = ' ';
+    }
+    else if(caseA1 == 1)
+    {
+        A1 = 'X';
+    }
+    else
+    {
+        A1 = '0';
+    }
     if  (caseA2 == 0)
     {
         A2 = ' ';
@@ -272,6 +284,7 @@ int main() {
     bool jeu = true;
 
 
+
     cout << "TicTacToe!" << endl;
 
     string caseChoisie;
@@ -323,8 +336,8 @@ int main() {
 
         if (joueur == 2) {
 
-            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
-            victoire(jeu, caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
+            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
+            victoire(jeu, caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
             cout << "Joueur 2 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
             getline(cin, caseChoisie);
