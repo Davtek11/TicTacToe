@@ -273,7 +273,6 @@ void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int&
 }
 
 
-
 int main() {
     /* Choix des cases pour joueur 1 et 2 */
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
@@ -292,57 +291,73 @@ int main() {
     while (jeu)
     {
         afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
-        cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
+
+        if (joueur)
+        {
+            cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
+        }
+        else
+        {
+            cout << "Joueur 2 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
+        }
 
         getline(cin, caseChoisie);
-
-        if (caseChoisie == "A1")
+        if (caseChoisie == "A1" && caseA1 == 0)
         {
             caseA1 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "A2")
+        else if (caseChoisie == "A2" && caseA2 == 0)
         {
             caseA2 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "A3")
+        else if (caseChoisie == "A3" && caseA3 == 0)
         {
             caseA3 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "B1")
+        else if (caseChoisie == "B1" && caseB1 == 0)
         {
             caseB1 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "B2")
+        else if (caseChoisie == "B2" && caseB2 == 0)
         {
             caseB2 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "B3")
+        else if (caseChoisie == "B3" && caseB3 == 0)
         {
             caseB3 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "C1")
+        else if (caseChoisie == "C1" && caseC1 == 0)
         {
             caseC1 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "C2")
+        else if (caseChoisie == "C2" && caseC2 == 0)
         {
             caseC2 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
-        else if (caseChoisie == "C3")
+        else if (caseChoisie == "C3" && caseC3 == 0)
         {
             caseC3 = joueur ? 1 : 2;
+            joueur = !joueur;
         }
         else
         {
             caseChoisie = "Pas une case valide!!";
         }
         cout << "Case selectionnee : " + caseChoisie << endl;
-        joueur = !joueur;
 
         victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
     }
 
     return 0;
 }
+
 
 
