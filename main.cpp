@@ -280,7 +280,7 @@ int main() {
         caseB1 = 0, caseB2 = 0, caseB3 = 0,
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
 
-    int joueur = 1;
+    bool joueur = true;
     bool jeu = true;
 
 
@@ -289,91 +289,57 @@ int main() {
 
     string caseChoisie;
 
-    while (jeu == true)
+    while (jeu)
     {
+        afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
+        cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
-        if (joueur == 1) {
+        getline(cin, caseChoisie);
 
-            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
-            victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
-            cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
-
-            getline(cin, caseChoisie);
-
-            if (caseChoisie == "A1") {
-                caseA1 = 1;
-            }
-            if (caseChoisie == "A2") {
-                caseA2 = 1;
-            }
-            if (caseChoisie == "A3") {
-                caseA3 = 1;
-            }
-            if (caseChoisie == "B1") {
-                caseB1 = 1;
-            }
-            if (caseChoisie == "B2") {
-                caseB2 = 1;
-            }
-            if (caseChoisie == "B3") {
-                caseB3 = 1;
-            }
-            if (caseChoisie == "C1") {
-                caseC1 = 1;
-            }
-            if (caseChoisie == "C2") {
-                caseC2 = 1;
-            }
-            if (caseChoisie == "C3") {
-                caseC3 = 1;
-            }
-
-            cout << "Case selectionnee : " + caseChoisie << endl;
-
-
-            joueur = 2;
+        if (caseChoisie == "A1")
+        {
+            caseA1 = joueur ? 1 : 2;
         }
-
-        if (joueur == 2) {
-
-            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
-            victoire(jeu, caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
-            cout << "Joueur 2 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
-
-            getline(cin, caseChoisie);
-
-            if (caseChoisie == "A1") {
-                caseA1 = 2;
-            }
-            if (caseChoisie == "A2") {
-                caseA2 = 2;
-            }
-            if (caseChoisie == "A3") {
-                caseA3 = 2;
-            }
-            if (caseChoisie == "B1") {
-                caseB1 = 2;
-            }
-            if (caseChoisie == "B2") {
-                caseB2 = 2;
-            }
-            if (caseChoisie == "B3") {
-                caseB3 = 2;
-            }
-            if (caseChoisie == "C1") {
-                caseC1 = 2;
-            }
-            if (caseChoisie == "C2") {
-                caseC2 = 2;
-            }
-            if (caseChoisie == "C3") {
-                caseC3 = 2;
-            }
-
-            cout << "Case selectionnee : " + caseChoisie << endl;
-
-            joueur = 1;
+        else if (caseChoisie == "A2")
+        {
+            caseA2 = joueur ? 1 : 2;
         }
+        else if (caseChoisie == "A3")
+        {
+            caseA3 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "B1")
+        {
+            caseB1 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "B2")
+        {
+            caseB2 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "B3")
+        {
+            caseB3 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "C1")
+        {
+            caseC1 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "C2")
+        {
+            caseC2 = joueur ? 1 : 2;
+        }
+        else if (caseChoisie == "C3")
+        {
+            caseC3 = joueur ? 1 : 2;
+        }
+        else
+        {
+            caseChoisie = "Pas une case valide!!";
+        }
+        cout << "Case selectionnee : " + caseChoisie << endl;
+        joueur = !joueur;
+
+        victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
     }
 
     return 0;
