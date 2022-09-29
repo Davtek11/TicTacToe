@@ -7,6 +7,9 @@
 #include <iostream>
 using namespace std;
 
+
+//Fonction qui permet d afficher l etat actuel du  jeu
+//Prend les 9 cases du jeu en parametre
 void afficherJeu (int caseA1, int caseA2, int caseA3,
                   int caseB1, int caseB2, int caseB3,
                   int caseC1, int caseC2, int caseC3)
@@ -14,18 +17,6 @@ void afficherJeu (int caseA1, int caseA2, int caseA3,
 
     char A1, A2, A3, B1, B2, B3, C1, C2, C3;
 
-    if  (caseA1 == 0)
-    {
-        A1 = ' ';
-    }
-    else if(caseA1 == 1)
-    {
-        A1 = 'X';
-    }
-    else
-    {
-        A1 = '0';
-    }
     if  (caseA1 == 0)
     {
         A1 = ' ';
@@ -281,7 +272,6 @@ int main() {
     bool jeu = true;
 
 
-
     cout << "TicTacToe!" << endl;
 
 
@@ -300,33 +290,34 @@ int main() {
 
     getline(cin, caseChoisie);
 
-    if (caseChoisie == "A1") {
-        caseA1 = 1;
-    }
-    if (caseChoisie == "A2") {
-        caseA2 = 1;
-    }
-    if (caseChoisie == "A3") {
-        caseA3 = 1;
-    }
-    if (caseChoisie == "B1") {
-        caseB1 = 1;
-    }
-    if (caseChoisie == "B2") {
-        caseB2 = 1;
-    }
-    if (caseChoisie == "B3") {
-        caseB3 = 1;
-    }
-    if (caseChoisie == "C1") {
-        caseC1 = 1;
-    }
-    if (caseChoisie == "C2") {
-        caseC2 = 1;
-    }
-    if (caseChoisie == "C3") {
-        caseC3 = 1;
-    }
+            if (caseChoisie == "A1") {
+            caseA1 = 1;
+            cout << "A1 : " << caseA1;
+            }
+            if (caseChoisie == "A2") {
+            caseA2 = 1;
+            }
+            if (caseChoisie == "A3") {
+                caseA3 = 1;
+            }
+            if (caseChoisie == "B1") {
+                caseB1 = 1;
+            }
+            if (caseChoisie == "B2") {
+                caseB2 = 1;
+            }
+            if (caseChoisie == "B3") {
+                caseB3 = 1;
+            }
+            if (caseChoisie == "C1") {
+                caseC1 = 1;
+            }
+            if (caseChoisie == "C2") {
+                caseC2 = 1;
+            }
+            if (caseChoisie == "C3") {
+                caseC3 = 1;
+            }
 
             cout << "Case selectionnee : " + caseChoisie << endl;
 
@@ -375,8 +366,6 @@ int main() {
             joueur = 1;
         }
     }
-
-
 
     return 0;
 }
