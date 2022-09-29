@@ -136,7 +136,7 @@ void afficherJeu (int caseA1, int caseA2, int caseA3,
 
 
 void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int& caseB2, int& caseB3, int& caseC1, int& caseC2, int& caseC3) {
-/*Conditions de victoires*/
+    /*Conditions de victoires*/
     ///////Cas 1
     if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
     {
@@ -263,7 +263,7 @@ void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int&
 
 
 int main() {
-/* Choix des cases pour joueur 1 et 2 */
+    /* Choix des cases pour joueur 1 et 2 */
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
         caseB1 = 0, caseB2 = 0, caseB3 = 0,
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
@@ -274,8 +274,6 @@ int main() {
 
     cout << "TicTacToe!" << endl;
 
-
-
     string caseChoisie;
 
     while (jeu == true)
@@ -283,19 +281,17 @@ int main() {
 
         if (joueur == 1) {
 
-            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
-            victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseA3, caseB3, caseC3);
+            afficherJeu(caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
+            victoire(jeu ,caseA1, caseA2, caseA3, caseB1, caseB2, caseB3, caseC1, caseC2, caseC3);
             cout << "Joueur 1 : Quelle case voulez vous jouer ? (ex : A1)" << endl;
 
-
-    getline(cin, caseChoisie);
+            getline(cin, caseChoisie);
 
             if (caseChoisie == "A1") {
-            caseA1 = 1;
-            cout << "A1 : " << caseA1;
+                caseA1 = 1;
             }
             if (caseChoisie == "A2") {
-            caseA2 = 1;
+                caseA2 = 1;
             }
             if (caseChoisie == "A3") {
                 caseA3 = 1;
