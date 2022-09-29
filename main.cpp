@@ -139,7 +139,7 @@ void afficherJeu (int caseA1, int caseA2, int caseA3,
 
 
 void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int& caseB2, int& caseB3, int& caseC1, int& caseC2, int& caseC3) {
-
+/*Conditions de victoires*/
     ///////Cas 1
     if (caseA1 == caseA2 and caseA1 == caseA3 and caseA1 !=0)
     {
@@ -266,7 +266,7 @@ void victoire(bool& jeu,int& caseA1, int& caseA2, int& caseA3, int& caseB1, int&
 
 
 int main() {
-
+/* Choix des cases pour joueur 1 et 2 */
     int caseA1 = 0, caseA2 = 0, caseA3 = 0,
         caseB1 = 0, caseB2 = 0, caseB3 = 0,
         caseC1 = 0, caseC2 = 0, caseC3 = 0;
@@ -284,9 +284,6 @@ int main() {
 
     while (jeu == true)
     {
-
-
-
 
         if (joueur == 1) {
 
